@@ -36,7 +36,7 @@
             flex-wrap: wrap;
             max-width: 1200px;
             padding: 20px;
-            margin-top: 180px; /* Added margin to prevent overlap with logo */
+            margin-top: 100px; /* Added margin to prevent overlap with logo */
             position: relative; /* Added position relative */
         }
 
@@ -51,21 +51,15 @@
             z-index: 0; /* Ensure the containers stay behind the logo */
         }
 
-        .container h1 {
+        .container h1, .container h4 {
             text-align: center;
-	    color: white;
+			color: white;
         }
-
-	.container h4 {
-            text-align: center;
-	    color: white;
-	    line-height: 10px;
-	}
 		
-	.container p {
-	    text-align: center;
-	     color: white;
-	}
+		.container p {
+			text-align: center;
+			color: white;
+		}
 		
 
         .container img {
@@ -93,6 +87,7 @@
             .container:nth-child(2) {
                 order: 1; /* Change order of right container on mobile */
             }
+        }
 		
 		.Button_primary__okAjY {
  			 background:linear-gradient(180deg,#ffd835 1.1%,#fffbd6 19.04%,#ffd839 65.88%,#f2ce48 80.89%,#efc933);
