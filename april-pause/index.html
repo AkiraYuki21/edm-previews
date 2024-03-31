@@ -36,7 +36,7 @@
             flex-wrap: wrap;
             max-width: 1200px;
             padding: 20px;
-            margin-top: 200px; /* Added margin to prevent overlap with logo */
+            margin-top: 180px; /* Added margin to prevent overlap with logo */
             position: relative; /* Added position relative */
         }
 
@@ -73,12 +73,20 @@
         @media screen and (max-width: 768px) {
             main {
                 flex-direction: column-reverse;
+                margin-top: 20px; /* Adjusted margin for mobile */
             }
 
             .container {
                 max-width: 100%; /* Full width for containers on mobile */
             }
-        }
+
+            .container:nth-child(1) {
+                order: 2; /* Change order of left container on mobile */
+            }
+
+            .container:nth-child(2) {
+                order: 1; /* Change order of right container on mobile */
+            }
 		
 		.Button_primary__okAjY {
  			 background:linear-gradient(180deg,#ffd835 1.1%,#fffbd6 19.04%,#ffd839 65.88%,#f2ce48 80.89%,#efc933);
