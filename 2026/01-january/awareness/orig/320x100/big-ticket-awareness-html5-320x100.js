@@ -919,9 +919,8 @@ if (reversed == null) { reversed = false; }
 	// new_cta
 	this.instance = new lib.new_cta_mc();
 	this.instance.setTransform(160,90.45);
-	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(362).to({_off:false},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(363));
 
 	// footer
 	this.instance_1 = new lib.Tween1("synched",0);
